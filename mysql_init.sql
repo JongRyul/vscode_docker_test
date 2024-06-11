@@ -1,9 +1,3 @@
-CREATE USER 'myuser'@'%' IDENTIFIED BY 'mypassword';
-
-GRANT ALL PRIVILEGES ON *.* TO 'myuser'@'%' WITH GRANT OPTION;
-
-FLUSH PRIVILEGES;
-
 CREATE DATABASE MY_DB;
 
 CREATE TABLE TB_TZ_MST (
@@ -40,5 +34,10 @@ INSERT IGNORE INTO `TB_TZ_MST` (`MNTH`, `HR`, `TZ`) VALUES
     (1, 21, "중간부하"),
     (1, 22, "중간부하"),
     (1, 23, "경부하");
+
+CREATE USER 'myuser'@'%' IDENTIFIED BY 'mypassword';
+
+GRANT ALL PRIVILEGES ON *.* TO 'myuser'@'%';
+FLUSH PRIVILEGES;
 
  
