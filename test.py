@@ -38,7 +38,7 @@ class DBManager:
 
 def main():
     db_config = {
-        "host": "172.24.0.2",
+        "host": "my-mysql", #"172.24.0.2",
         "port": "3306",
         "user": "myuser",
         "password": "mypassword",
